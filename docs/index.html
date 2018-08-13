@@ -199,7 +199,11 @@
                     color: "white",
                 }
                 markers[id].setLabel(label);
+                markers[id].addListener('click', function () {
+                    console.log(" プロフィール表示 ")
+                });
             }
+
 
             if (id == 0) {
                 markers[id].setAnimation(google.maps.Animation.BOUNCE);
@@ -356,7 +360,6 @@
 
             //近辺のユーザー取得
             getAreaUsers();
-
 
 
 
